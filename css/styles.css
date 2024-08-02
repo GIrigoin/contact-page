@@ -22,9 +22,13 @@ a {
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 48px;
+}
 /* Add some styles for body*/
 body {
   background-image: url("../images/bg-image.svg");
+  background-size: cover;
   min-height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
@@ -51,6 +55,13 @@ label {
   font-size: 14px;
   color: #f8fafc;
   padding-bottom: 2px;
+}
+select {
+  appearance: none;
+  background-image: url("../images/Expand_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1rem auto;
 }
 input,
 select {
@@ -160,5 +171,39 @@ textarea {
     width: 898px;
   }
 }
-/* @media screen and (width <= 640px) {
-} */
+@media screen and (width <= 640px) {
+  body {
+    padding: 24px;
+  }
+  input,
+  select {
+    width: 530px;
+    margin-bottom: 28px;
+  }
+  button {
+    width: 530px;
+  }
+  .header {
+    width: 420px;
+    .title {
+      font-size: 44px;
+    }
+    .text {
+      font-size: 20px;
+    }
+
+    margin-bottom: 76px;
+  }
+  .form {
+    width: 594px;
+    height: 920px;
+    justify-content: flex-start;
+  }
+  .inputs-container {
+    flex-direction: column;
+  }
+  .message {
+    width: 530px;
+    margin-bottom: 28px;
+  }
+}
